@@ -31,7 +31,7 @@ from premailer import Premailer
 def preprocess_html_merge_cssless(src_path, dst_path):
     with open(src_path, 'r') as a_file:
         content = a_file.read()
-        parser = etree.HTMLParser()
+        parser = etree.HTMLParser(encoding='utf-8')
         stripped = content.strip()
         root = etree.fromstring(stripped, parser)
 

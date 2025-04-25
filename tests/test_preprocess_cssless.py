@@ -83,7 +83,7 @@ class HTMLTestBase(unittest.TestCase):
         expected_output = \
             '<html><body>{0}</body></html>'.format(expected_output)
 
-        parser = etree.HTMLParser()
+        parser = etree.HTMLParser(encoding='utf-8')
         root = etree.fromstring(input, parser)
 
         root = function(root)
