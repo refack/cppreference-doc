@@ -24,6 +24,8 @@ import os
 import re
 import shutil
 import urllib.parse
+import posixpath as urlpath
+from pathlib import Path
 
 from lxml import etree
 
@@ -106,6 +108,16 @@ def convert_loader_name(fn):
     raise Exception(msg)
 
 
+# Use regex to match characters with high byte 0xf0
+# that is what WSL drvfs does to the filenames with WIN32 invalid characters
+RE_WSL_DEMANGLER = re.compile(r'[\uf000-\uf0ff]')
+
+
+def fix_WSL_mangled_filename(filename):
+    ret = RE_WSL_DEMANGLER.sub(lambda m: chr(ord(m.group(0)) & 0xff), filename)
+    return ret
+
+
 def build_rename_map(root):
     # Returns a rename map: a map from old to new file name
     loader = re.compile(r'load\.php\?.*')
@@ -114,14 +126,18 @@ def build_rename_map(root):
 
     # find files with invalid names -> rename all occurrences
     for fn in set(fn for _, _, filenames in os.walk(root) for fn in filenames):
+        fn_orig = fn
+        fn = fix_WSL_mangled_filename(fn)
         if loader.match(fn):
             result[fn] = convert_loader_name(fn)
+            result[fn_orig] = result[fn]
 
         elif any((c in fn) for c in '?*"'):
             new_fn = query.sub('', fn)
             new_fn = new_fn.replace('"', '_q_')
             new_fn = new_fn.replace('*', '_star_')
             result[fn] = new_fn
+            result[fn_orig] = result[fn]
 
     # find files that conflict on case-insensitive filesystems
     for dir, _, filenames in os.walk(root):
@@ -176,8 +192,8 @@ def is_loader_link(target):
 
 def transform_loader_link(target, file, root):
     # Absolute loader.php links need to be made relative
-    abstarget = os.path.join(root, "common", convert_loader_name(target))
-    return os.path.relpath(abstarget, os.path.dirname(file))
+    abstarget = urlpath.join(root, "common", convert_loader_name(target))
+    return urlpath.relpath(abstarget, os.path.dirname(file))
 
 
 def is_ranges_placeholder(target):
@@ -203,8 +219,8 @@ def transform_ranges_placeholder(target, file, root):
     reltarget = re.sub(match, repl + '.html', target)
 
     # Make site-relative link file-relative
-    abstarget = os.path.join(root, reltarget)
-    return os.path.relpath(abstarget, os.path.dirname(file))
+    abstarget = urlpath.join(root, reltarget)
+    return urlpath.relpath(abstarget, urlpath.dirname(file))
 
 
 def is_external_link(target):
@@ -221,21 +237,21 @@ def trasform_relative_link(rename_map, target, file):
     path = path.replace('../../upload.cppreference.com/mwiki/', '../common/')
     path = path.replace('../mwiki/', '../common/')
 
-    dir, fn = os.path.split(path)
+    dir, fn = urlpath.split(path)
     new_fn = rename_map.get(fn)
     if new_fn:
         # look for case conflict of the renamed file
-        abstarget = os.path.normpath(
-                os.path.join(os.path.dirname(file), dir, new_fn))
+        abstarget = urlpath.normpath(
+                urlpath.join(urlpath.dirname(file), dir, new_fn))
         new_fn = rename_map.get(abstarget, new_fn)
     else:
         # original filename unchanged, look for case conflict
-        abstarget = os.path.normpath(os.path.join(os.path.dirname(file), path))
+        abstarget = urlpath.normpath(urlpath.join(urlpath.dirname(file), path))
         new_fn = rename_map.get(abstarget)
     if new_fn:
-        path = os.path.join(dir, new_fn)
+        path = urlpath.join(dir, new_fn)
 
-    path = urllib.parse.quote(path)
+    # path = urllib.parse.quote(path)
     return urllib.parse.urlunparse(('', '', path, params, '', fragment))
 
 
@@ -350,6 +366,7 @@ def remove_fileinfo(html):
 
 # make custom footer
 def add_footer(html, root, fn):
+    root_path = Path(root)
     footer = html.xpath("//*[@id='footer']")[0]
     for child in footer.getchildren():
         id = child.get('id')
@@ -358,10 +375,12 @@ def add_footer(html, root, fn):
             items.clear()
 
             link = etree.SubElement(etree.SubElement(items, 'li'), 'a')
-            url = re.sub(r'(..)/(.*)\.html',
-                         r'https://\1.cppreference.com/w/\2',
-                         os.path.relpath(fn, root))
-            url = re.sub(r'(.*)/index', r'\1/', url)
+            fn_path = Path(fn).relative_to(root_path)
+            lang_root = fn_path.parents[-2]
+            rest = 'w' / fn_path.relative_to(lang_root).with_suffix('')
+            if rest.name == 'index':
+                rest = rest.parent
+            url = f'https://{lang_root.name}.cppreference.com/{rest.as_posix()}'
             link.set('href', url)
             link.text = 'Online version'
 
@@ -381,8 +400,8 @@ def remove_unused_external(html):
         if el.get('rel') in ('alternate', 'search', 'edit', 'EditURI'):
             el.getparent().remove(el)
         elif el.get('rel') == 'shortcut icon':
-            (head, tail) = os.path.split(el.get('href'))
-            el.set('href', os.path.join(head, 'common', tail))
+            (head, tail) = urlpath.split(el.get('href'))
+            el.set('href', urlpath.join(head, 'common', tail))
 
 
 def preprocess_html_file(root, fn, rename_map):
