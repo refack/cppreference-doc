@@ -1,0 +1,612 @@
+<html class="client-nojs" dir="ltr" lang="en">
+  <head>
+    <title>std::valarray&lt;T&gt;::~valarray - cppreference.com</title>
+    <meta charset="utf-8">
+    <meta content="MediaWiki 1.21.2" name="generator">
+    <link href="../../../../favicon.ico" rel="shortcut icon">
+    <link href="../../../../common/opensearch_desc.xml" rel="search" title="cppreference.com (en)" type="application/opensearchdescription+xml">
+    <link href="../../../../common/ext.css" rel="stylesheet">
+    <meta content="" name="ResourceLoaderDynamicStyles">
+    <link href="../../../../common/site_modules.css" rel="stylesheet">
+    <style>
+a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+toc{display:none}
+editsection{display:none}
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {
+	line-height: normal; border: 0px none white;
+}
+
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000dd;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #909090;}
+.cpp.source-cpp .co2 {color: #339900;}
+.cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.cpp.source-cpp .es0 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #008000;}
+.cpp.source-cpp .nu0 {color: #000080;}
+.cpp.source-cpp .nu6 {color: #000080;}
+.cpp.source-cpp .nu8 {color: #000080;}
+.cpp.source-cpp .nu12 {color: #000080;}
+.cpp.source-cpp .nu16 {color:#000080;}
+.cpp.source-cpp .nu17 {color:#000080;}
+.cpp.source-cpp .nu18 {color:#000080;}
+.cpp.source-cpp .nu19 {color:#000080;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+  </head>
+  <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_numeric_valarray_valarray skin-cppreference2 action-view cpp-navbar">
+    <div id="cpp-content-base">
+      <div id="content">
+        <a id="top"></a>
+        <h1 class="firstHeading" id="firstHeading"><span style="font-size:0.7em; line-height:130%">std::valarray&lt;T&gt;::</span>~valarray</h1>
+        <div id="bodyContent">
+          <div id="siteSub">From cppreference.com</div>
+          <div id="contentSub"><span class="subpages">&lt; <a href="../../../cpp.html" title="cpp">cpp</a>‎ | <a href="../../numeric.html" title="cpp/numeric">numeric</a>‎ | <a href="../valarray.html" title="cpp/numeric/valarray">valarray</a></span></div>
+          <div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en">
+            <div class="t-navbar" style="">
+              <div class="t-navbar-sep"></div>
+              <div class="t-navbar-head">
+                <a href="../../../cpp.html" title="cpp">C++</a>
+                <div class="t-navbar-menu">
+                  <div>
+                    <div>
+                      <table cellpadding="0" class="t-nv-begin" style="line-height:1.1em;">
+                        <tr class="t-nv"><td colspan="5"><a href="../../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../language.html" title="cpp/language">Language</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../memory.html" title="cpp/memory">Memory management library</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../container.html" title="cpp/container">Containers library</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../string.html" title="cpp/string">Strings library</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../text.html" title="cpp/text">Text processing library</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../chrono.html" title="cpp/chrono">Date and time library</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../io.html" title="cpp/io">Input/output library</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../atomic.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+                      </table>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="t-navbar-sep"></div>
+              <div class="t-navbar-head">
+                <a href="../../numeric.html" title="cpp/numeric">Numerics library</a>
+                <div class="t-navbar-menu">
+                  <div>
+                    <div>
+                      <table cellpadding="0" class="t-nv-begin" style="">
+                        <tr class="t-nv"><td colspan="5"><a href="../math.html" title="cpp/numeric/math">Common mathematical functions</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../special_functions.html" title="cpp/numeric/special functions">Mathematical special functions</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../constants.html" title="cpp/numeric/constants">Mathematical constants</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../linalg.html" title="cpp/numeric/linalg">Basic linear algebra algorithms</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../simd.html" title="cpp/numeric/simd">Data-parallel types (SIMD)</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../fenv.html" title="cpp/numeric/fenv">Floating-point environment</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../complex.html" title="cpp/numeric/complex">Complex numbers</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../valarray.html" title="cpp/numeric/valarray">Numeric array (<code>valarray</code>)</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../random.html" title="cpp/numeric/random">Pseudo-random number generation</a></td></tr>
+                        <tr class="t-nv"><td colspan="5"><a href="../../utility/bit.html" title="cpp/utility/bit">Bit manipulation</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+                        <tr class="t-nv-h2"><td colspan="5"><a href="../../numeric.html#Factor_operations" title="cpp/numeric">Factor operations</a></td></tr>
+                        <tr class="t-nv-col-table">
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table"><div><a href="../gcd.html" title="cpp/numeric/gcd"><span class="t-lines"><span>gcd</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table"><div><a href="../lcm.html" title="cpp/numeric/lcm"><span class="t-lines"><span>lcm</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="t-nv-h2"><td colspan="5"><a href="../../numeric.html#Interpolation_operations" title="cpp/numeric">Interpolations</a></td></tr>
+                        <tr class="t-nv-col-table">
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../midpoint.html" title="cpp/numeric/midpoint"><span class="t-lines"><span>midpoint</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table"><div><a href="../lerp.html" title="cpp/numeric/lerp"><span class="t-lines"><span>lerp</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="t-nv-h2"><td colspan="5"><a href="../../numeric.html#Saturation_arithmetic_.28since_C.2B.2B26.29" title="cpp/numeric">Saturation arithmetic</a></td></tr>
+                        <tr class="t-nv-col-table">
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../add_sat.html" title="cpp/numeric/add sat"><span class="t-lines"><span>add_sat</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../sub_sat.html" title="cpp/numeric/sub sat"><span class="t-lines"><span>sub_sat</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../saturate_cast.html" title="cpp/numeric/saturate cast"><span class="t-lines"><span>saturate_cast</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../mul_sat.html" title="cpp/numeric/mul sat"><span class="t-lines"><span>mul_sat</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../div_sat.html" title="cpp/numeric/div sat"><span class="t-lines"><span>div_sat</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="t-nv-h2"><td colspan="5"><a href="../../numeric.html#Numeric_operations" title="cpp/numeric">Generic numeric operations</a></td></tr>
+                        <tr class="t-nv-col-table">
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../../algorithm/iota.html" title="cpp/algorithm/iota"><span class="t-lines"><span>iota</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../../algorithm/ranges/iota.html" title="cpp/algorithm/ranges/iota"><span class="t-lines"><span>ranges::iota</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../algorithm/accumulate.html" title="cpp/algorithm/accumulate"><span class="t-lines"><span>accumulate</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../algorithm/inner_product.html" title="cpp/algorithm/inner product"><span class="t-lines"><span>inner_product</span></span></a></div></div></td></tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../../algorithm/adjacent_difference.html" title="cpp/algorithm/adjacent difference"><span class="t-lines"><span>adjacent_difference</span></span></a></div>
+                                      <div><span class="t-lines"><span><code></code></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../algorithm/partial_sum.html" title="cpp/algorithm/partial sum"><span class="t-lines"><span>partial_sum</span></span></a></div></div></td></tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../../algorithm/reduce.html" title="cpp/algorithm/reduce"><span class="t-lines"><span>reduce</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../../algorithm/transform_reduce.html" title="cpp/algorithm/transform reduce"><span class="t-lines"><span>transform_reduce</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../../algorithm/inclusive_scan.html" title="cpp/algorithm/inclusive scan"><span class="t-lines"><span>inclusive_scan</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../../algorithm/exclusive_scan.html" title="cpp/algorithm/exclusive scan"><span class="t-lines"><span>exclusive_scan</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../../algorithm/transform_inclusive_scan.html" title="cpp/algorithm/transform inclusive scan"><span class="t-lines"><span>transform_inclusive_scan</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="../../algorithm/transform_exclusive_scan.html" title="cpp/algorithm/transform exclusive scan"><span class="t-lines"><span>transform_exclusive_scan</span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="t-navbar-sep"></div>
+              <div class="t-navbar-head">
+                <a href="../valarray.html" title="cpp/numeric/valarray"><tt>std::valarray</tt></a>
+                <div class="t-navbar-menu">
+                  <div>
+                    <div>
+                      <table cellpadding="0" class="t-nv-begin" style="">
+                        <tr class="t-nv-h1"><td colspan="5"><a href="../valarray.html#Member_functions" title="cpp/numeric/valarray">Member functions</a></td></tr>
+                        <tr class="t-nv-col-table">
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="valarray.html" title="cpp/numeric/valarray/valarray"><span class="t-lines"><span>valarray::valarray</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>valarray::~valarray</span></span></strong></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator=.html" title="cpp/numeric/valarray/operator="><span class="t-lines"><span>valarray::operator=</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_at.html" title="cpp/numeric/valarray/operator at"><span class="t-lines"><span>valarray::operator[]</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap.html" title="cpp/numeric/valarray/swap"><span class="t-lines"><span>valarray::swap</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="size.html" title="cpp/numeric/valarray/size"><span class="t-lines"><span>valarray::size</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="resize.html" title="cpp/numeric/valarray/resize"><span class="t-lines"><span>valarray::resize</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="sum.html" title="cpp/numeric/valarray/sum"><span class="t-lines"><span>valarray::sum</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="min.html" title="cpp/numeric/valarray/min"><span class="t-lines"><span>valarray::min</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="max.html" title="cpp/numeric/valarray/max"><span class="t-lines"><span>valarray::max</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="shift.html" title="cpp/numeric/valarray/shift"><span class="t-lines"><span>valarray::shift</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="cshift.html" title="cpp/numeric/valarray/cshift"><span class="t-lines"><span>valarray::cshift</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="apply.html" title="cpp/numeric/valarray/apply"><span class="t-lines"><span>valarray::apply</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="operator_arith.html" title="cpp/numeric/valarray/operator arith"><span class="t-lines"><span>valarray::operator+</span><span>valarray::operator-</span><span>valarray::operator~</span><span>valarray::operator!</span></span></a></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div>
+                                        <a href="operator_arith2.html" title="cpp/numeric/valarray/operator arith2">
+                                          <span class="t-lines">
+                                            <span>valarray::operator+=</span>
+                                            <span>valarray::operator-=</span>
+                                            <span>valarray::operator*=</span>
+                                            <span>valarray::operator/=</span>
+                                            <span>valarray::operator%=</span>
+                                            <span>valarray::operator&amp;=</span>
+                                            <span>valarray::operator|=</span>
+                                            <span>valarray::operator^=</span>
+                                            <span>valarray::operator&lt;&lt;=</span>
+                                            <span>valarray::operator&gt;&gt;=</span>
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="t-nv-h1"><td colspan="5"><a href="../valarray.html#Non-member_functions" title="cpp/numeric/valarray">Non-member functions</a></td></tr>
+                        <tr class="t-nv-col-table">
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="swap2.html" title="cpp/numeric/valarray/swap2"><span class="t-lines"><span>swap<span style="font-size:0.7em; line-height:130%">(std::valarray)</span></span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="begin2.html" title="cpp/numeric/valarray/begin2"><span class="t-lines"><span>begin<span style="font-size:0.7em; line-height:130%">(std::valarray)</span></span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span><code></code></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div><a href="end2.html" title="cpp/numeric/valarray/end2"><span class="t-lines"><span>end<span style="font-size:0.7em; line-height:130%">(std::valarray)</span></span></span></a></div>
+                                      <div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="abs.html" title="cpp/numeric/valarray/abs"><span class="t-lines"><span>abs</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="exp.html" title="cpp/numeric/valarray/exp"><span class="t-lines"><span>exp</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="log.html" title="cpp/numeric/valarray/log"><span class="t-lines"><span>log</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="log10.html" title="cpp/numeric/valarray/log10"><span class="t-lines"><span>log10</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="pow.html" title="cpp/numeric/valarray/pow"><span class="t-lines"><span>pow</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="sqrt.html" title="cpp/numeric/valarray/sqrt"><span class="t-lines"><span>sqrt</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="sin.html" title="cpp/numeric/valarray/sin"><span class="t-lines"><span>sin</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="cos.html" title="cpp/numeric/valarray/cos"><span class="t-lines"><span>cos</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="tan.html" title="cpp/numeric/valarray/tan"><span class="t-lines"><span>tan</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="asin.html" title="cpp/numeric/valarray/asin"><span class="t-lines"><span>asin</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="acos.html" title="cpp/numeric/valarray/acos"><span class="t-lines"><span>acos</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="atan.html" title="cpp/numeric/valarray/atan"><span class="t-lines"><span>atan</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="atan2.html" title="cpp/numeric/valarray/atan2"><span class="t-lines"><span>atan2</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="sinh.html" title="cpp/numeric/valarray/sinh"><span class="t-lines"><span>sinh</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="cosh.html" title="cpp/numeric/valarray/cosh"><span class="t-lines"><span>cosh</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="tanh.html" title="cpp/numeric/valarray/tanh"><span class="t-lines"><span>tanh</span></span></a></div></div></td></tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div>
+                                        <a href="operator_arith3.html" title="cpp/numeric/valarray/operator arith3">
+                                          <span class="t-lines">
+                                            <span>operator*</span>
+                                            <span>operator/</span>
+                                            <span>operator%</span>
+                                            <span>operator+</span>
+                                            <span>operator-</span>
+                                            <span>operator^</span>
+                                            <span>operator&amp;</span>
+                                            <span>operator|</span>
+                                            <span>operator&lt;&lt;</span>
+                                            <span>operator&gt;&gt;</span>
+                                            <span>operator&amp;&amp;</span>
+                                            <span>operator||</span>
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv">
+                                  <td colspan="5">
+                                    <div class="t-nv-ln-table">
+                                      <div>
+                                        <a href="operator_cmp.html" title="cpp/numeric/valarray/operator cmp">
+                                          <span class="t-lines"><span>operator==</span><span>operator!=</span><span>operator&lt;</span><span>operator&gt;</span><span>operator&lt;=</span><span>operator&gt;=</span></span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="t-nv-h1"><td colspan="5"><a href="../valarray.html#Helper_classes" title="cpp/numeric/valarray">Helper classes</a></td></tr>
+                        <tr class="t-nv-col-table">
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="slice_array.html" title="cpp/numeric/valarray/slice array"><span class="t-lines"><span>slice_array</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="gslice_array.html" title="cpp/numeric/valarray/gslice array"><span class="t-lines"><span>gslice_array</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="indirect_array.html" title="cpp/numeric/valarray/indirect array"><span class="t-lines"><span>indirect_array</span></span></a></div></div></td></tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <table cellpadding="0" class="t-nv-begin" style="">
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="slice.html" title="cpp/numeric/valarray/slice"><span class="t-lines"><span>slice</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="gslice.html" title="cpp/numeric/valarray/gslice"><span class="t-lines"><span>gslice</span></span></a></div></div></td></tr>
+                                <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mask_array.html" title="cpp/numeric/valarray/mask array"><span class="t-lines"><span>mask_array</span></span></a></div></div></td></tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="t-nv-h1"><td colspan="5"><a href="deduction_guides.html" title="cpp/numeric/valarray/deduction guides">Deduction guides</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+                      </table>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="t-navbar-sep"></div>
+            </div>
+            <table class="t-dcl-begin">
+              <tbody>
+                <tr class="t-dcl"><td class="t-dcl-nopad"><div><span class="mw-geshi cpp source-cpp">~valarray<span class="br0">(</span><span class="br0">)</span></span></div></td>
+<td class="t-dcl-nopad"></td>
+<td class="t-dcl-nopad"></td>
+</tr>
+                <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+              </tbody>
+            </table>
+            <p>Destructs the numeric array. The destructors of the elements are called and the used storage is deallocated. 
+</p>
+            <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
+            <p>Linear in the size of the numeric array.
+</p>
+          </div>
+          <div class="printfooter">Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/valarray/%7Evalarray&amp;oldid=41935">https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/valarray/%7Evalarray&amp;oldid=41935</a>
+          </div>
+          <div class="visualClear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="noprint" id="cpp-footer-base">
+      <div id="footer">
+        <div id="cpp-navigation"><h5>Navigation</h5>
+<ul><li><a href="https://en.cppreference.com/w/cpp/numeric/valarray/~valarray">Online version</a></li><li>Offline version retrieved 2025-04-27 17:11.</li></ul></div>
+        <ul id="footer-info"><li id="footer-info-lastmod">This page was last modified on 2 November 2012, at 13:11.</li>
+</ul>
+      </div>
+    </div>
+  </body>
+</html>

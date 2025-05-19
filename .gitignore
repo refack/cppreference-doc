@@ -9,3 +9,5 @@ venv
 *.stripped.txt
 _out_reference/
 .outtmp/
+# Local Netlify folder
+.netlify
