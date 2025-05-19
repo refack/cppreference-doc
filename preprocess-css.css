@@ -10,7 +10,7 @@ div#cpp-content-base {
 div#content {
     margin: auto;
     position: static;
-    width: 48.75em;
+    width: 80em;
 }
 
 html, body {
@@ -49,4 +49,8 @@ pre,
 
 .t-dcl-member-nobold-div > div:first-child {
     font-family: DejaVuSans, "DejaVu Sans", arial, sans-serif;
+}
+
+.coliru-btn {
+    display: none;
 }

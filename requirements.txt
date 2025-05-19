@@ -1,2 +1,0 @@
-premailer==3.7.0
-lxml==5.3.0

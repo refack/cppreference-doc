@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/.makeartifacts" />
+      <excludeFolder url="file://$MODULE_DIR$/reference.win" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/_out_reference" />
+      <excludeFolder url="file://$MODULE_DIR$/_out_all" />
+      <excludeFolder url="file://$MODULE_DIR$/reference_trimmed" />
+    </content>
+    <orderEntry type="jdk" jdkName="uv (cppreference-doc-repo)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

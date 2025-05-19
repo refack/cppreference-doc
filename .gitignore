@@ -6,3 +6,6 @@ pywiki
 release/
 venv
 *.pyc
+*.stripped.txt
+_out_reference/
+.outtmp/

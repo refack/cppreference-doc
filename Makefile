@@ -15,7 +15,11 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see http://www.gnu.org/licenses/.
 
-SHELL := /usr/bin/env bash
+ifndef WINDIR
+	SHELL := /usr/bin/env bash -x
+else
+	SHELL := $(SHELL) -x
+endif
 
 #Common prefixes
 
@@ -235,24 +239,58 @@ indexes:
 	./index2autolinker.py index-functions-c.xml output/indexes/autolink-c
 	./index2autolinker.py index-functions-cpp.xml output/indexes/autolink-cpp
 
+
+define REJECT_PARTS
+index.php
+/Special:
+/Talk:
+/Help:
+/File:
+/Cppreference:
+/WhatLinksHere:
+/Template:
+/Category:
+action=
+printable=
+en.cppreference.com/book
+utility
+endef
+
+comma := ,
+space := $(empty) $(empty)
+WGET_REJECT := $(subst $(space),$(comma),$(REJECT_PARTS:%=*%*))
+$(info WGET_REJECT=$(WGET_REJECT))
+
+TIMESTAMP != date "+%Y%m%d-%H%M%S"
+LOG_FILENAME := wget-log-$(TIMESTAMP).txt
+
+backup_reference:
+	mkdir -p "reference"
+	mkdir -p "backup"
+ifndef NO_BACKUP
+	cp -r reference backup/reference-$(TIMESTAMP)
+endif
+
 #redownloads the source documentation directly from en.cppreference.com
-source:
-	rm -rf "reference"
-	mkdir "reference"
+source: backup_reference
+	pushd reference
+	rm -f reference/en.cppreference.com/w/index.html
+	wget --mirror --adjust-extension --page-requisites --content-disposition \
+		 --https-only --no-check-certificate --execute robots=off \
+		 --force-directories --recursive --level=15 --continue --timestamping \
+		 --span-hosts --domains=en.cppreference.com,upload.cppreference.com \
+		 --timeout=5 --tries=50 --retry-connrefused --waitretry=10 --read-timeout=20 \
+		 --verbose --server-response --show-progress --output-file=$(LOG_FILENAME) \
+		 --rejected-log="reject-$(LOG_FILENAME).tsv" --reject="$(WGET_REJECT)"\
+		 https://en.cppreference.com/w/
+	grep -oP '(?<=^Location: )https[^ ]+' "$(LOG_FILENAME)" | sort > urls-$(TIMESTAMP).txt
+	../export.py --url=https://en.cppreference.com/mwiki cppreference-export-ns0,4,8,10.xml 0 4 8 10
+	popd
 
-	pushd "reference" > /dev/null; \
-	regex=".*index\\.php.*|.*/Special:.*|.*/Talk:.*" \
-	regex+="|.*/Help:.*|.*/File:.*|.*/Cppreference:.*" \
-	regex+="|.*/WhatLinksHere:.*|.*/Template:.*|.*/Category:.*" \
-	regex+="|.*action=.*|.*printable=.*|.*en.cppreference.com/book.*" ; \
-	echo $$regex ; \
-	wget --adjust-extension --page-requisites --convert-links \
-		--force-directories --recursive --level=15 \
-		--span-hosts --domains=en.cppreference.com,upload.cppreference.com \
-		--reject-regex $$regex \
-		--timeout=5 --tries=50 --no-verbose \
-		--retry-connrefused --waitretry=10 --read-timeout=20 \
-		https://en.cppreference.com/w/ ; \
-	popd > /dev/null
 
-	./export.py --url=https://en.cppreference.com/mwiki reference/cppreference-export-ns0,4,8,10.xml 0 4 8 10
+source_listed: backup_reference
+	cat urls.txt | xargs -n 1 -P 4 \
+		wget --directory-prefix=reference --convert-links --adjust-extension --content-disposition --timestamping \
+		--execute robots=off --span-hosts --domains=en.cppreference.com,upload.cppreference.com \
+		--timeout=5 --tries=50 --retry-connrefused --waitretry=10 --read-timeout=20 \
+		--verbose --show-progress --output-file=listed-$(LOG_FILENAME)
