@@ -1,0 +1,10 @@
+[project]
+name = "cppreference"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "lxml==6.0.2",
+    "premailer==3.10.0",
+]
