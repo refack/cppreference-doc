@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml
+Sitemap: https://cppref.node4good.org/sitemap.xml
