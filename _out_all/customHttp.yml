@@ -1,0 +1,1860 @@
+customHeaders:
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/algorithm.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/algorithm.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/atomic.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/atomic.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/chrono.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/chrono.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/compiler_support.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/compiler_support.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/error.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/error.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/experimental.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/experimental.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/experimental/dynamic.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/experimental/dynamic.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/experimental/fpext1.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/experimental/fpext1.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/io.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/io.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/keyword.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/keyword.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/language.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/language.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/language/attributes.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/language/attributes.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/links.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/links.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/locale.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/locale.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/memory.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/memory.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/numeric.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/numeric.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/numeric/complex.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/numeric/complex.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/numeric/fenv.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/numeric/fenv.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/numeric/math.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/numeric/math.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/numeric/random.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/numeric/random.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/preprocessor.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/preprocessor.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/program.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/program.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/string.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/string.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/string/byte.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/string/byte.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/string/multibyte.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/string/multibyte.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/string/wide.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/string/wide.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/thread.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/thread.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/types.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/types.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/types/limits.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/types/limits.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/c/variadic.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/c/variadic.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/algorithm.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/algorithm.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/algorithm/ranges.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/algorithm/ranges.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/atomic.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/atomic.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/atomic/atomic.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/atomic/atomic.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/atomic/atomic_flag.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/atomic/atomic_flag.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/atomic/atomic_ref.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/atomic/atomic_ref.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/c.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/c.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/day.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/day.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/duration.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/duration.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/duration_values.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/duration_values.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/file_clock.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/file_clock.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/gps_clock.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/gps_clock.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/hh_mm_ss.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/hh_mm_ss.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/high_resolution_clock.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/high_resolution_clock.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/leap_second.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/leap_second.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/local_info.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/local_info.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/local_t.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/local_t.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/month.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/month.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/month_day.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/month_day.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/month_day_last.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/month_day_last.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/month_weekday.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/month_weekday.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/month_weekday_last.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/month_weekday_last.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/steady_clock.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/steady_clock.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/sys_info.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/sys_info.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/system_clock.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/system_clock.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/tai_clock.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/tai_clock.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/time_point.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/time_point.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/time_zone.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/time_zone.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/time_zone_link.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/time_zone_link.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/tzdb.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/tzdb.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/tzdb_list.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/tzdb_list.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/utc_clock.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/utc_clock.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/weekday.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/weekday.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/weekday_indexed.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/weekday_indexed.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/weekday_last.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/weekday_last.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/year.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/year.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/year_month.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/year_month.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/year_month_day.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/year_month_day.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/year_month_day_last.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/year_month_day_last.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/year_month_weekday.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/year_month_weekday.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/year_month_weekday_last.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/year_month_weekday_last.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/chrono/zoned_time.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/chrono/zoned_time.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/compiler_support.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/compiler_support.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/concepts.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/concepts.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/array.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/array.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/deque.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/deque.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/flat_map.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/flat_map.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/flat_multimap.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/flat_multimap.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/flat_multiset.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/flat_multiset.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/flat_set.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/flat_set.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/forward_list.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/forward_list.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/inplace_vector.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/inplace_vector.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/list.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/list.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/map.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/map.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/mdspan.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/mdspan.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/mdspan/extents.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/mdspan/extents.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/mdspan/layout_left.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/mdspan/layout_left.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/mdspan/layout_left/mapping.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/mdspan/layout_left/mapping.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/mdspan/layout_right.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/mdspan/layout_right.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/mdspan/layout_right/mapping.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/mdspan/layout_right/mapping.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/mdspan/layout_stride.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/mdspan/layout_stride.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/mdspan/layout_stride/mapping.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/mdspan/layout_stride/mapping.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/multimap.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/multimap.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/multiset.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/multiset.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/priority_queue.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/priority_queue.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/queue.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/queue.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/set.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/set.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/span.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/span.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/stack.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/stack.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/unordered_map.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/unordered_map.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/unordered_multimap.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/unordered_multimap.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/unordered_multiset.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/unordered_multiset.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/unordered_set.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/unordered_set.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/vector.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/vector.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/container/vector_bool.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/container/vector_bool.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/coroutine.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/coroutine.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/coroutine/coroutine_handle.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/coroutine/coroutine_handle.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/coroutine/generator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/coroutine/generator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/coroutine/generator/promise_type.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/coroutine/generator/promise_type.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/error.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/error.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/error/bad_exception.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/error/bad_exception.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/error/errc.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/error/errc.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/error/error_category.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/error/error_category.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/error/error_code.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/error/error_code.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/error/error_condition.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/error/error_condition.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/error/exception.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/error/exception.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/error/nested_exception.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/error/nested_exception.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/error/system_error.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/error/system_error.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/execution.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/execution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/any.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/any.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/atomic_shared_ptr.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/atomic_shared_ptr.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/atomic_weak_ptr.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/atomic_weak_ptr.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/barrier.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/barrier.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/basic_string_view.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/basic_string_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/concurrency.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/concurrency.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/flex_barrier.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/flex_barrier.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/fs.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/fs.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/fs/directory_entry.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/fs/directory_entry.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/fs/directory_iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/fs/directory_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/fs/file_status.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/fs/file_status.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/fs/filesystem_error.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/fs/filesystem_error.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/fs/path.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/fs/path.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/fs/recursive_directory_iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/fs/recursive_directory_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/function.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/function.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/future.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/future.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/latch.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/latch.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/lib_extensions.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/lib_extensions.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/lib_extensions/packaged_task.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/lib_extensions/packaged_task.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/lib_extensions/promise.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/lib_extensions/promise.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/memory_resource.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/memory_resource.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/monotonic_buffer_resource.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/monotonic_buffer_resource.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/observer_ptr.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/observer_ptr.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/optional.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/optional.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/ostream_joiner.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/ostream_joiner.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/parallelism.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/parallelism.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/polymorphic_allocator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/polymorphic_allocator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/propagate_const.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/propagate_const.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/ranges.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/ranges.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/ranges/utility/tagged.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/ranges/utility/tagged.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/reflect.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/reflect.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/scope_exit.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/scope_exit.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/scope_fail.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/scope_fail.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/scope_success.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/scope_success.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/shared_future.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/shared_future.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/shared_ptr.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/shared_ptr.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/simd.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/simd.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/simd/simd.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/simd/simd.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/simd/simd_mask.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/simd/simd_mask.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/source_location.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/source_location.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/special_functions.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/special_functions.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/synchronized_pool_resource.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/synchronized_pool_resource.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/unique_resource.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/unique_resource.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/unsynchronized_pool_resource.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/unsynchronized_pool_resource.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/experimental/weak_ptr.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/experimental/weak_ptr.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/filesystem.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/filesystem.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/filesystem/directory_entry.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/filesystem/directory_entry.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/filesystem/directory_iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/filesystem/directory_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/filesystem/file_status.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/filesystem/file_status.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/filesystem/filesystem_error.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/filesystem/filesystem_error.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/filesystem/path.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/filesystem/path.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/filesystem/recursive_directory_iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/filesystem/recursive_directory_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/header.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/header.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/header/experimental.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/header/experimental.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_filebuf.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_filebuf.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_fstream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_fstream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_ifstream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_ifstream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_ios.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_ios.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_iostream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_iostream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_ispanstream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_ispanstream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_istream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_istream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_istringstream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_istringstream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_ofstream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_ofstream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_ospanstream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_ospanstream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_ostream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_ostream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_ostringstream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_ostringstream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_osyncstream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_osyncstream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_spanbuf.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_spanbuf.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_spanstream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_spanstream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_streambuf.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_streambuf.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_stringbuf.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_stringbuf.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_stringstream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_stringstream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/basic_syncbuf.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/basic_syncbuf.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/c.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/c.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/fpos.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/fpos.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/io_errc.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/io_errc.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/ios_base.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/ios_base.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/istrstream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/istrstream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/manip.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/manip.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/ostrstream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/ostrstream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/strstream.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/strstream.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/io/strstreambuf.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/io/strstreambuf.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator/back_insert_iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator/back_insert_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator/basic_const_iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator/basic_const_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator/common_iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator/common_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator/counted_iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator/counted_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator/front_insert_iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator/front_insert_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator/insert_iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator/insert_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator/istream_iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator/istream_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator/istreambuf_iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator/istreambuf_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator/move_iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator/move_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator/move_sentinel.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator/move_sentinel.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator/ostream_iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator/ostream_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator/ostreambuf_iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator/ostreambuf_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/iterator/reverse_iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/iterator/reverse_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/keyword.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/keyword.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/keywords.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/keywords.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/language.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/language.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/language/attributes.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/language/attributes.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/links.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/links.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/codecvt.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/codecvt.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/collate.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/collate.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/ctype.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/ctype.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/ctype_char.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/ctype_char.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/locale.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/locale.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/locale/facet.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/locale/facet.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/locale/id.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/locale/id.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/messages.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/messages.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/money_get.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/money_get.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/money_put.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/money_put.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/moneypunct.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/moneypunct.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/num_get.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/num_get.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/num_put.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/num_put.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/numpunct.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/numpunct.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/time_get.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/time_get.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/time_put.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/time_put.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/wbuffer_convert.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/wbuffer_convert.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/locale/wstring_convert.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/locale/wstring_convert.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/allocator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/allocator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/allocator_traits.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/allocator_traits.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/auto_ptr.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/auto_ptr.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/c.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/c.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/enable_shared_from_this.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/enable_shared_from_this.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/inout_ptr_t.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/inout_ptr_t.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/memory_resource.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/memory_resource.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/monotonic_buffer_resource.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/monotonic_buffer_resource.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/new.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/new.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/out_ptr_t.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/out_ptr_t.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/pointer_traits.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/pointer_traits.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/polymorphic_allocator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/polymorphic_allocator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/raw_storage_iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/raw_storage_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/scoped_allocator_adaptor.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/scoped_allocator_adaptor.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/shared_ptr.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/shared_ptr.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/synchronized_pool_resource.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/synchronized_pool_resource.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/unique_ptr.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/unique_ptr.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/unsynchronized_pool_resource.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/unsynchronized_pool_resource.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/memory/weak_ptr.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/memory/weak_ptr.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/named_req.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/named_req.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/complex.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/complex.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/fenv.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/fenv.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/math.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/math.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/bernoulli_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/bernoulli_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/binomial_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/binomial_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/cauchy_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/cauchy_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/chi_squared_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/chi_squared_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/discard_block_engine.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/discard_block_engine.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/discrete_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/discrete_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/exponential_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/exponential_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/extreme_value_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/extreme_value_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/fisher_f_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/fisher_f_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/gamma_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/gamma_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/geometric_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/geometric_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/independent_bits_engine.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/independent_bits_engine.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/linear_congruential_engine.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/linear_congruential_engine.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/lognormal_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/lognormal_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/mersenne_twister_engine.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/mersenne_twister_engine.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/negative_binomial_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/negative_binomial_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/normal_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/normal_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/philox_engine.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/philox_engine.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/piecewise_constant_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/piecewise_constant_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/piecewise_linear_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/piecewise_linear_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/poisson_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/poisson_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/random_device.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/random_device.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/seed_seq.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/seed_seq.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/shuffle_order_engine.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/shuffle_order_engine.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/student_t_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/student_t_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/subtract_with_carry_engine.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/subtract_with_carry_engine.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/uniform_int_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/uniform_int_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/uniform_real_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/uniform_real_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/random/weibull_distribution.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/random/weibull_distribution.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/ratio.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/ratio.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/simd.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/simd.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/special_functions.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/special_functions.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/valarray.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/valarray.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/valarray/gslice_array.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/valarray/gslice_array.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/valarray/indirect_array.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/valarray/indirect_array.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/valarray/mask_array.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/valarray/mask_array.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/numeric/valarray/slice_array.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/numeric/valarray/slice_array.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/preprocessor.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/preprocessor.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/adjacent_transform_view.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/adjacent_transform_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/adjacent_transform_view/iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/adjacent_transform_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/adjacent_transform_view/sentinel.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/adjacent_transform_view/sentinel.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/adjacent_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/adjacent_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/adjacent_view/iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/adjacent_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/adjacent_view/sentinel.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/adjacent_view/sentinel.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/basic_istream_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/basic_istream_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/cartesian_product_view.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/cartesian_product_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/cartesian_product_view/iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/cartesian_product_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/chunk_by_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/chunk_by_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/chunk_by_view/iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/chunk_by_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/chunk_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/chunk_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/chunk_view/inner_iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/chunk_view/inner_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/chunk_view/iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/chunk_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/chunk_view/outer_iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/chunk_view/outer_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/common_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/common_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/concat_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/concat_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/concat_view/iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/concat_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/drop_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/drop_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/drop_while_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/drop_while_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/elements_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/elements_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/elements_view/iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/elements_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/elements_view/sentinel.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/elements_view/sentinel.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/enumerate_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/enumerate_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/enumerate_view/iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/enumerate_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/enumerate_view/sentinel.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/enumerate_view/sentinel.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/filter_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/filter_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/iota_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/iota_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/join_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/join_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/join_view/iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/join_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/join_view/sentinel.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/join_view/sentinel.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/join_with_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/join_with_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/join_with_view/iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/join_with_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/join_with_view/sentinel.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/join_with_view/sentinel.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/lazy_split_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/lazy_split_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/repeat_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/repeat_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/slide_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/slide_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/slide_view/iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/slide_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/slide_view/sentinel.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/slide_view/sentinel.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/split_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/split_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/stride_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/stride_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/stride_view/iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/stride_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/subrange.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/subrange.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/take_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/take_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/take_view/sentinel.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/take_view/sentinel.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/take_while_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/take_while_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/take_while_view/sentinel.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/take_while_view/sentinel.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/transform_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/transform_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/transform_view/iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/transform_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/transform_view/sentinel.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/transform_view/sentinel.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/view_interface.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/view_interface.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/zip_transform_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/zip_transform_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/zip_transform_view/iterator.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/zip_transform_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/zip_transform_view/sentinel.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/zip_transform_view/sentinel.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/zip_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/zip_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/zip_view/iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/zip_view/iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/ranges/zip_view/sentinel.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/ranges/zip_view/sentinel.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/regex.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/regex.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/regex/basic_regex.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/regex/basic_regex.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/regex/match_results.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/regex/match_results.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/regex/regex_error.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/regex/regex_error.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/regex/regex_iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/regex/regex_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/regex/regex_token_iterator.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/regex/regex_token_iterator.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/regex/regex_traits.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/regex/regex_traits.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/regex/sub_match.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/regex/sub_match.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/standard_library.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/standard_library.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/string.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/string.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/string/basic_string.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/string/basic_string.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/string/basic_string_view.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/string/basic_string_view.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/string/byte.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/string/byte.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/string/char_traits.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/string/char_traits.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/string/multibyte.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/string/multibyte.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/string/wide.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/string/wide.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/symbol_index.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/symbol_index.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/text.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/text.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/text/text_encoding.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/text/text_encoding.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/barrier.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/barrier.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/condition_variable.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/condition_variable.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/condition_variable_any.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/condition_variable_any.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/counting_semaphore.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/counting_semaphore.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/future.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/future.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/future_errc.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/future_errc.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/future_error.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/future_error.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/jthread.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/jthread.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/latch.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/latch.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/lock_guard.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/lock_guard.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/mutex.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/mutex.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/packaged_task.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/packaged_task.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/promise.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/promise.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/recursive_mutex.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/recursive_mutex.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/recursive_timed_mutex.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/recursive_timed_mutex.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/scoped_lock.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/scoped_lock.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/shared_future.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/shared_future.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/shared_lock.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/shared_lock.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/shared_mutex.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/shared_mutex.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/shared_timed_mutex.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/shared_timed_mutex.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/stop_callback.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/stop_callback.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/stop_source.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/stop_source.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/stop_token.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/stop_token.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/thread.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/thread.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/thread/id.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/thread/id.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/timed_mutex.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/timed_mutex.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/thread/unique_lock.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/thread/unique_lock.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/types.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/types.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/types/climits.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/types/climits.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/types/numeric_limits.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/types/numeric_limits.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/types/type_index.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/types/type_index.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/types/type_info.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/types/type_info.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/any.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/any.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/basic_stacktrace.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/basic_stacktrace.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/bitset.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/bitset.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/expected.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/expected.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/format.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/format.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/format/basic_format_arg.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/format/basic_format_arg.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/format/ranges_formatter.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/format/ranges_formatter.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/functional.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/functional.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/functional/copyable_function.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/functional/copyable_function.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/functional/function.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/functional/function.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/functional/function_ref.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/functional/function_ref.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/functional/move_only_function.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/functional/move_only_function.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/functional/reference_wrapper.html>;
+      rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/functional/reference_wrapper.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/hash.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/hash.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/initializer_list.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/initializer_list.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/optional.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/optional.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/pair.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/pair.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/program.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/program.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/source_location.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/source_location.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/stacktrace_entry.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/stacktrace_entry.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/tuple.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/tuple.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/variadic.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/variadic.html
+- headers:
+  - key: Link
+    value: <https://cppref.node4good.org/cpp/utility/variant.html>; rel="canonical"
+  pattern: https://cppref.node4good.org/cpp/utility/variant.html
