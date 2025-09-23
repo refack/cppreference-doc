@@ -25,23 +25,22 @@ import re
 import shutil
 import urllib.parse
 import posixpath as urlpath
+import warnings
 from pathlib import Path
 
+import lxml.html
 from lxml import etree
 
-
-def rmtree_if_exists(dir):
-    if os.path.isdir(dir):
-        shutil.rmtree(dir)
+from bs4 import BeautifulSoup, Comment
 
 
-def move_dir_contents_to_dir(srcdir, dstdir):
-    for fn in os.listdir(srcdir):
-        shutil.move(os.path.join(srcdir, fn),
-                    os.path.join(dstdir, fn))
+def rmtree_if_exists(dir_name):
+    direc = Path(dir_name).absolute()
+    if direc.exists() and direc.is_dir():
+        shutil.rmtree(direc)
 
 
-def rearrange_archive(root):
+def rearrange_archive(root_str):
     # rearrange the archive. {root} here is output/reference
 
     # before
@@ -56,39 +55,95 @@ def rearrange_archive(root):
     # {root}/en/ : html for en
     # ... (other languages)
 
-    data_path = os.path.join(root, 'common')
-    rmtree_if_exists(data_path)
-    shutil.move(os.path.join(root, 'upload.cppreference.com/mwiki'), data_path)
-    shutil.rmtree(os.path.join(root, 'upload.cppreference.com'))
+    root = Path(root_str)
+    assets_path = root / 'common'
+
+    upload_subdir = root / 'upload.cppreference.com'
+    mwiki_dir = upload_subdir / 'mwiki'
+
+    rmtree_if_exists(assets_path)
+    if mwiki_dir.is_dir():
+        mwiki_dir.rename(assets_path)
+    shutil.rmtree(upload_subdir)
 
     for lang in ["en"]:
-        path = os.path.join(root, lang + ".cppreference.com/")
-        src_html_path = path + "w/"
-        src_data_path = path + "mwiki/"
-        html_path = os.path.join(root, lang)
+        source = root / (lang + ".cppreference.com")
+        html_path = root / lang
+        src_html_path = source / "w"
+        src_data_path = source / "mwiki"
 
-        if os.path.isdir(src_html_path):
-            shutil.move(src_html_path, html_path)
+        # Move the html directory
+        if src_html_path.is_dir():
+            src_html_path.rename(html_path)
 
-        if os.path.isdir(src_data_path):
+        # Merge the assets directories
+        if src_data_path.is_dir():
+            print(f'merging {src_data_path} into {assets_path}')
             # the skin files should be the same for all languages thus we
             # can merge everything
-            move_dir_contents_to_dir(src_data_path, data_path)
+            for item in src_data_path.iterdir():
+                item.rename(assets_path / item.name)
+            src_data_path.rmdir()
 
         # also copy the custom fonts
-        shutil.copy(os.path.join(path, 'DejaVuSansMonoCondensed60.ttf'),
-                    data_path)
-        shutil.copy(os.path.join(path, 'DejaVuSansMonoCondensed75.ttf'),
-                    data_path)
+        for fnt in source.glob('*.ttf'):
+            fnt.rename(assets_path / fnt.name)
         # and the favicon
-        shutil.copy(os.path.join(path, 'favicon.ico'), data_path)
+        for fnt in source.glob('*.ico'):
+            fnt.rename(root / fnt.name)
 
         # remove what's left
-        shutil.rmtree(path)
+        shutil.rmtree(source)
 
     # remove the XML source file
-    for fn in fnmatch.filter(os.listdir(root), 'cppreference-export*.xml'):
-        os.remove(os.path.join(root, fn))
+    for xml_path in root.glob( 'cppreference-export*.xml'):
+        xml_path.unlink()
+
+
+def css_syntax_heuristics(m: re.Match) -> str:
+    symbol = str(m.group(1))
+    if symbol == '}':
+        return '\n}\n'
+    elif symbol == '{':
+        return '\n{\n\t'
+    elif symbol == ';':
+        return ';\n\t'
+    elif symbol == ',':
+        return ', '
+    elif symbol == '(' or symbol == ')':
+        return symbol
+    return symbol
+
+
+def fix_css_rel_paths(in_path: Path):
+    CSS_PRETTIER = re.compile(r'\s*([};{,(])\s*')
+    # CSS_PATH_RE = re.compile(r'url\(\s*(["\']?)([^"\')]+\s*)\1\)')
+
+    # fix relative paths in CSS files
+    if in_path.is_dir():
+        items = in_path.rglob('*.css')
+    elif in_path.suffix == '.css':
+        items = [in_path]
+    else:
+        return
+
+    killed_tags = io.StringIO()
+
+    def comment_killer(m: re.Match) -> str:
+        killed_tags.write(f"{m.group(0)}\n\n")
+        return ''
+
+    for item in items:
+        killed_tags.write(f"Removed comment from {item.name} :\n")
+        text = item.read_text()
+        text = CSS_PRETTIER.sub(css_syntax_heuristics, text)
+        text = text.replace('("../', '("./')
+        text = re.sub(r'/\*[^*]*\*/', comment_killer, text, flags=re.DOTALL)
+        text = re.sub(r'48\.75em', lambda m: killed_tags.write(f"found width: {m.group(0)}\n\n") and '80em', text)
+        item.write_text(text)
+        killed_tags.write("\n")
+
+    (in_path / 'removed.comment.css.txt').write_text(killed_tags.getvalue())
 
 
 def convert_loader_name(fn):
@@ -136,6 +191,12 @@ def build_rename_map(root):
             new_fn = query.sub('', fn)
             new_fn = new_fn.replace('"', '_q_')
             new_fn = new_fn.replace('*', '_star_')
+            result[fn] = new_fn
+            result[fn_orig] = result[fn]
+
+        elif 'opensearch_desc.php' in fn:
+            # opensearch_desc.php is a special case
+            new_fn = fn.replace('opensearch_desc.php', 'opensearch_desc.xml')
             result[fn] = new_fn
             result[fn_orig] = result[fn]
 
@@ -327,18 +388,21 @@ def remove_see_also(html):
 
 
 # remove Google Analytics scripts
+# orphaned
 def remove_google_analytics(html):
-    for el in html.xpath('/html/body/script'):
-        if el.get('src') is not None:
-            if 'google-analytics.com/ga.js' in el.get('src'):
-                el.getparent().remove(el)
-        elif el.text is not None:
-            if 'google-analytics.com/ga.js' in el.text or \
-                    'pageTracker' in el.text:
-                el.getparent().remove(el)
+    for el in html.xpath('//script'):
+        if 'google' in el.get('src', '') or 'php' in el.get('src', ''):
+            el.getparent().remove(el)
+
+        if el.text and (
+            'google-analytics.com/ga.js' in el.text or
+            'pageTracker' in el.text
+        ):
+            el.getparent().remove(el)
 
 
 # remove ads
+# orphaned
 def remove_ads(html):
     # Carbon Ads
     for el in html.xpath('//script[@src]'):
@@ -399,35 +463,112 @@ def remove_unused_external(html):
     for el in html.xpath('/html/head/link'):
         if el.get('rel') in ('alternate', 'search', 'edit', 'EditURI'):
             el.getparent().remove(el)
-        elif el.get('rel') == 'shortcut icon':
+        elif 'icon' in el.get('rel'):
             (head, tail) = urlpath.split(el.get('href'))
             el.set('href', urlpath.join(head, 'common', tail))
 
 
 def preprocess_html_file(root, fn, rename_map):
-    parser = etree.HTMLParser(encoding='utf-8')
-    html = etree.parse(fn, parser)
     output = io.StringIO()
+    killed_tags = io.StringIO()
 
-    remove_unused_external(html)
+    # Capture warnings during parsing
+    with warnings.catch_warnings(record=True) as warning_list:
+        warnings.simplefilter("always")
+
+        # Parse with BeautifulSoup using lxml for API compatibility
+        with open(fn, 'r', encoding='utf-8') as f:
+            print(f'cooking {fn}')
+            soup = BeautifulSoup(f, "html.parser")
+
+        # Log captured warnings
+        for warning in warning_list:
+            print(f"HTML WARN: {warning.message}", file=output)
+
+    # Remove <script> tags
+    for tag in soup.find_all('script'):
+        killed_tags.write(f"script: {tag}\n\n\n")
+        tag.extract()
+
+    # Remove HTML comments
+    for tag in soup.find_all(string=lambda t: isinstance(t, Comment)):
+        killed_tags.write(f"Comment: {tag}\n")
+        tag.extract()
+
+    for tag in soup.select('head > link'):
+        link_rel = tag.get('rel')
+        if 'stylesheet' in link_rel or 'icon' in link_rel or 'search' in link_rel:
+            # keep
+            continue
+
+        killed_tags.write(f"head > link: {tag}\n")
+        tag.extract()
+
+    # Simplify links to wiki Files
+    for a_tag in soup.find_all('a[href*=".cppreference.com/w/File:"]'):
+        killed_tags.write(f"a[File]: {a_tag}\n\n\n")
+
+        img_tag = a_tag.find('img')
+
+        srcset = img_tag.get('srcset', '')
+        entries = [entry.strip().split(' ')[0] for entry in srcset.split(',') if entry.strip()]
+
+        if entries:
+            a_tag['href'] = entries[-1]  # take the last image URL
+
+    # Cleanup <style> tags
+    all_styles = []
+    for style_tag in soup.find_all('style'):
+        style_str = str(style_tag.string)
+
+        comments = re.findall(r'/\*.*?\*/', style_str, flags=re.DOTALL)
+        for comment in comments:
+            killed_tags.write(f"Removed comment from a <style> tag:\n{comment}\n\n")
+            style_str = style_str.replace(comment, '')
+
+        style_str = re.sub(r'}(\S)', '}\n\1', style_str).strip()
+        all_styles += [style_str]
+        style_tag.extract()
+
+    merged_style = '\n'.join(all_styles)
+    style_tag = soup.new_tag("style", string=merged_style)
+    soup.find('head').append(style_tag)
+    # first_style.replace_with(bs4.Stylesheet(merged_style))
+
+    # Remove the mw-js-message div
+    tag = soup.find(id="mw-js-message")
+    if tag:
+        killed_tags.write(f"Removed div#mw-js-message: {tag}\n")
+        tag.extract()
+
+    Path(fn).with_suffix('.stripped.txt').write_text(killed_tags.getvalue())
+
+
+    # Remove some kruft xpath style
+    html = lxml.html.fromstring(soup.decode())
+    cleanup_via_xpath(fn, html, rename_map, root)
+    indent_tree(html)
+    html_str = lxml.html.tostring(html, pretty_print=False, encoding='unicode', method='html')
+
+    # Write the modified HTML back with entities
+    with open(fn, 'w', encoding='utf-8') as f:
+        f.write(html_str)
+
+    return output.getvalue()
+
+
+def cleanup_via_xpath(fn, html, rename_map, root):
+    # remove_unused_external(html)
     remove_noprint(html, keep_footer=True)
-    remove_google_analytics(html)
-    remove_ads(html)
-    remove_fileinfo(html)
-
+    # remove_google_analytics(html)
+    # remove_ads(html)
+    # remove_fileinfo(html)
     add_footer(html, root, fn)
-
-    # apply changes to links caused by file renames
+    # Apply changes to links caused by file renames using xpath
     for el in html.xpath('//*[@src]'):
         el.set('src', transform_link(rename_map, el.get('src'), fn, root))
     for el in html.xpath('//*[@href]'):
         el.set('href', transform_link(rename_map, el.get('href'), fn, root))
-
-    for err in list(parser.error_log):
-        print("HTML WARN: {0}".format(err), file=output)
-
-    html.write(fn, encoding='utf-8', method='html')
-    return output.getvalue()
 
 
 def preprocess_css_file(fn):
@@ -461,3 +602,44 @@ def preprocess_startup_script(fn):
 
     with open(fn, "w", encoding='utf-8') as f:
         f.write(text)
+
+
+def indent_tree(el: lxml.html.HtmlElement, level=0, indent_str="  ", inline_tags=frozenset()):
+    """In-place pretty‑print indent of an lxml element.
+       Inline tags listed in `inline_tags` will not get
+       extra newlines around them."""
+    if el.tag == 'pre':
+        return
+    elif el.tag == 'style':
+        el.text = f'\n{el.text.strip()}\n'
+        return
+
+    pad = "\n" + level*indent_str
+    # el.tail = el.tail and el.tail.strip()
+    if el.text:
+        txt = el.text
+        txt = re.sub(r'^\s+', '', txt, flags=re.DOTALL)
+        txt = re.sub(r'\n\s+$', '', txt, flags=re.DOTALL)
+        el.text = txt
+
+    if len(lxml.html.tostring(el, encoding='unicode')) < 250:
+        # don't add newlines inside inline elements
+        for child in el:
+            indent_tree(child, level, indent_str, inline_tags)
+        return
+
+    # otherwise treat as a block
+    if len(el):
+        if not el.text or not el.text.strip():
+            el.text = pad + indent_str
+        for child in el:
+            indent_tree(child, level+1, indent_str, inline_tags)
+            if not child.tail or not child.tail.strip():
+                child.tail = pad + indent_str
+        # last child's tail back to the parent level
+        el[-1].tail = "\n" + level*indent_str
+    else:
+        # no children: ensure text is stripped
+        if el.text:
+            el.text = el.text.strip()
+        el.tail = pad

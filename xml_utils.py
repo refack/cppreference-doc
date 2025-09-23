@@ -24,6 +24,7 @@ xml_escape_table = {
     "'": "&apos;",
     ">": "&gt;",
     "<": "&lt;",
+    "\u00A0": "&nbsp;",
     }
 
 
@@ -32,9 +33,6 @@ def xml_escape(text):
 
 
 def xml_unescape(text):
-    text = text.replace("&quot;", '"')
-    text = text.replace("&apos;", "'")
-    text = text.replace("&gt;", ">")
-    text = text.replace("&lt;", "<")
-    text = text.replace("&amp;", "&")
+    for key, value in xml_escape_table.items():
+        text = text.replace(value, key)
     return text

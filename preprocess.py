@@ -21,6 +21,7 @@ import argparse
 import concurrent.futures
 import os
 import shutil
+from pathlib import Path
 
 from commands import preprocess
 
@@ -36,8 +37,8 @@ def main():
         help='Destination folder to put preprocessed archive to')
     args = parser.parse_args()
 
-    root = args.dst
-    src = args.src
+    root = Path(args.dst)
+    src = Path(args.src)
 
     # copy the source tree
     preprocess.rmtree_if_exists(root)
@@ -47,11 +48,13 @@ def main():
 
     rename_map = preprocess.build_rename_map(root)
     preprocess.rename_files(root, rename_map)
+    preprocess.fix_css_rel_paths(root)
+
 
     # clean the html files
     file_list = preprocess.find_html_files(root)
 
-    with concurrent.futures.ProcessPoolExecutor() as executor:
+    with concurrent.futures.ThreadPoolExecutor(8) as executor:
         futures = [
             executor.submit(preprocess.preprocess_html_file,
                             root, fn, rename_map)
